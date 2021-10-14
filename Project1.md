@@ -33,12 +33,16 @@ Python is one of the most accessible programming languages because it is not com
 # Criteria B: Design
 
 ## System Diagram
+![image](https://user-images.githubusercontent.com/89135778/137406212-d287995b-8009-4980-9966-ec4a63d0bb57.png)
+
+This is the System Diagram. You can see how the game is operated in a computer HP with its especifications, with the operative system of WIndows 10. The programme used to tun this game is PyCharm Edu and the archive's name is game.py. There is also a local database where the name, time and score is stored.
+
 
 ## Flow Diagrams
 ![Project1diagram](https://user-images.githubusercontent.com/89135778/137405018-157665e4-5b8c-4a9a-a860-b53a6ac69ce2.png)
 
 This diagram is the most basic base of my game. You can see that there is the basic information like the user name and the timer. Also, here is first made the labyrinth, with a 2-dimensinal list where "#" is a wall and "." the floor. The user needs to reach "E", the exit. The user will start in position x=1 y=1 and the minotaur in position x=9 y=9. 
-After this basic introducitons I am going to explain a bit more the algorithm.
+After this basic introducitons I am going to explain a bit more the algorithm. The user will input in the keyboard and will receive output in the monitor screen.
 
 ```
 #Example of how the labyrinth could look like. The user cannot see this.
@@ -78,8 +82,8 @@ shows the flow diagram for this function.
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 24                 | B         |
-| 2       | Create a encryption function for the user data                | A function tested that uses the caesar cypher                                                                   | 20 min        | Oct 6                  | C         |
-| 3       | Integrate the encryption with the database save/load function | The database is encrypted and can be read/write                                                                 |               |                        | C         |
-| 4       | Create a function for encoding the database                   | a function tested that encodes the database                                                                     | 40min         | Oct 7                  | C         |
-| 5       | Unit Test: function for encoding with the Caesar cypher       | To check that the function works as expected. Test with input "hello" and key =1. The outcome should be "ifmmp" | 5 min         | Oct 7                  | E         |
+| 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 24                 |           |
+| 2       | Create a encryption function for the user data                | A function tested that uses the caesar cypher                                                                   | 20 min        | Oct 6                  |           |
+| 3       | Integrate the encryption with the database save/load function | The database is encrypted and can be read/write                                                                 |               |                        |           |
+| 4       | Create a function for encoding the database                   | a function tested that encodes the database                                                                     | 40min         | Oct 7                  |           |
+| 5       | Unit Test: function for encoding with the Caesar cypher       | To check that the function works as expected. Test with input "hello" and key =1. The outcome should be "ifmmp" | 5 min         | Oct 7                  |           |
