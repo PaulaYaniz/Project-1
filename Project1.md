@@ -78,12 +78,13 @@ To finish the game, the user needs to reach "E", the exit. If not, the time can 
 The database in the game has to be protected so that personal data is not exposed. To solve this requirement I am using the Caesar cypher. **Fig. 2**
 shows the flow diagram for this function.
 
+## What is the personal relevance of the game? Why did you pick the theme?
+I love Greek and Roman myths and gods. They have relevance in our daily lifes. For example, they have had influence on Percy Jackson books, The Maze Runner series and many more. I think everyone should hear these stories because you can learn a lot of things about them. The idea of creating a game about a labyrinth first came and I wasn't even sure if it was possible to create it, but after some research I found how to do it. After that, I was thinking of the thematic and I thought that doing it about the Minotaur's myth could be very interesting. 
 
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 24                 |           |
-| 2       | Create a encryption function for the user data                | A function tested that uses the caesar cypher                                                                   | 20 min        | Oct 6                  |           |
-| 3       | Integrate the encryption with the database save/load function | The database is encrypted and can be read/write                                                                 |               |                        |           |
-| 4       | Create a function for encoding the database                   | a function tested that encodes the database                                                                     | 40min         | Oct 7                  |           |
-| 5       | Unit Test: function for encoding with the Caesar cypher       | To check that the function works as expected. Test with input "hello" and key =1. The outcome should be "ifmmp" | 5 min         | Oct 7                  |           |
+| 1       | Create system diagram                                         | To have a clear idea of the hardware and software requirements for the proposed solution                        | 10min         | Sep 30                 |           |
+| 2       | Create flow diagrams for the project                           | To have clear ideas on how to code and how the programme would work                                                                   | 20 min        | Sep 30                  |           |
+| 3       | Code the base of my game                                      | The game has a base, which is the labyrinth                                                                 |40min               |  Oct 7                     |           |
+| 4       | Caesar cypher       | To check that there is security | 5 min         | Oct 14                  |           |
