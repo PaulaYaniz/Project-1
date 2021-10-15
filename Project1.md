@@ -74,6 +74,7 @@ To finish the game, the user needs to reach "E", the exit. If not, the time can 
 
 
 ### Caesar Cypher
+![Caesar](https://user-images.githubusercontent.com/89135778/137412426-fb1e8e2d-5f45-41f4-9d25-922c4bfecd90.png)
 
 The database in the game has to be protected so that personal data is not exposed. To solve this requirement I am using the Caesar cypher. **Fig. 2**
 shows the flow diagram for this function.
