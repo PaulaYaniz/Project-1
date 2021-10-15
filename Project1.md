@@ -39,7 +39,7 @@ This is the System Diagram. You can see how the game is operated in a computer H
 
 
 ## Flow Diagrams
-![Project1diagram](https://user-images.githubusercontent.com/89135778/137405018-157665e4-5b8c-4a9a-a860-b53a6ac69ce2.png)
+![Project1diagram](https://user-images.githubusercontent.com/89135778/137440549-eeb239c1-e9a9-4c56-b958-2c099a1fa3ab.png)
 
 This diagram is the most basic base of my game. You can see that there is the basic information like the user name and the timer. Also, here is first made the labyrinth, with a 2-dimensinal list where "#" is a wall and "." the floor. The user needs to reach "E", the exit. The user will start in position x=1 y=1 and the minotaur in position x=9 y=9. 
 After this basic introducitons I am going to explain a bit more the algorithm. The user will input in the keyboard and will receive output in the monitor screen.
@@ -59,7 +59,7 @@ After this basic introducitons I am going to explain a bit more the algorithm. T
 8 #.......M#
 9 ##########
 ```
-![image](https://user-images.githubusercontent.com/89135778/137404081-61a7ce18-4586-4c1b-9491-c91ee54ffdb2.png)
+![image](https://user-images.githubusercontent.com/89135778/137441033-ddae5c4e-5389-46a2-8061-0fc05aa3ab40.png)
 
 In this loop the user, Theseus, moves. He can go North (N), South (S), West (W)  or East (E) with the keyboard. If Theseus arrives to a "#" in the labyrinth, he would have hit a wall, so he would have lost and has to start over. By doing this, the user must remember where are the walls, maybe drawing their own labyrinth by hand in a paper.
 
@@ -67,7 +67,7 @@ In this loop the user, Theseus, moves. He can go North (N), South (S), West (W) 
 
 In this loop the Minotaur moves. This is done automatically every time the user moves. 
 
-![image](https://user-images.githubusercontent.com/89135778/137404125-8786aeb1-11c3-4d2a-9242-7afb309d7246.png)
+![image](https://user-images.githubusercontent.com/89135778/137441090-ccd2e234-eafd-41fc-a55a-2e921721486b.png)
 
 To finish the game, the user needs to reach "E", the exit. If not, the time can be over or the user may be next to the Minotaur, so it would eat him.
 
