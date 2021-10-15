@@ -13,12 +13,12 @@ lab = [[1,1,1,1,1,1,1,1,1,1],
        [1,0,0,0,0,1,0,0,0,1],
        [1,1,1,1,1,1,1,1,1,1]]
 
-perseo_x = 1
-perseo_y = 1
+theseus_x = 1
+theseus_y = 1
 
 for i in range(10):
   for j in range(10):
-    if (i == perseo_x) and (j == perseo_y):
+    if (i == theseus_x) and (j == theseus_y):
       print("@", sep="", end="")
     elif (lab[i][j] == 1):
       print("#", sep="", end="")
