@@ -61,7 +61,7 @@ After this basic introducitons I am going to explain a bit more the algorithm. T
 ```
 ![image](https://user-images.githubusercontent.com/89135778/137404081-61a7ce18-4586-4c1b-9491-c91ee54ffdb2.png)
 
-In this loop the user, Perseo, moves. He can go North (N), South (S), West (W)  or East (E) with the keyboard. If Perseo arrives to a "#" in the labyrinth, he would have hit a wall, so he would have lost and has to start over. By doing this, the user must remember where are the walls, maybe drawing their own labyrinth by hand in a paper.
+In this loop the user, Theseus, moves. He can go North (N), South (S), West (W)  or East (E) with the keyboard. If Theseus arrives to a "#" in the labyrinth, he would have hit a wall, so he would have lost and has to start over. By doing this, the user must remember where are the walls, maybe drawing their own labyrinth by hand in a paper.
 
 ![image](https://user-images.githubusercontent.com/89135778/137404105-cf5e4745-103d-4cfc-8c7e-7e59c2812fbf.png)
 
