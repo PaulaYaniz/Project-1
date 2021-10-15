@@ -82,6 +82,13 @@ shows the flow diagram for this function.
 ## What is the personal relevance of the game? Why did you pick the theme?
 I love Greek and Roman myths and gods. They have relevance in our daily lifes. For example, they have had influence on Percy Jackson books, The Maze Runner series and many more. I think everyone should hear these stories because you can learn a lot of things about them. The idea of creating a game about a labyrinth first came and I wasn't even sure if it was possible to create it, but after some research I found how to do it. After that, I was thinking of the thematic and I thought that doing it about the Minotaur's myth could be very interesting. 
 
+## Future improvements:
+- Random initial positions for Theseus and Minotaur
+- The game could tell the user if the Minotaur is close
+- New labyrinths with different difficulty levels
+- Available in other languages: Spanish
+
+
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
