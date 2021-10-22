@@ -28,7 +28,8 @@ Python is one of the most accessible programming languages because it is not com
 3. The game must record the player name and score.
 4. The game has to be played in less than 20 minutes each time.
 5. The user will only need its computer, a pen and a sheet of paper to play.
-6. The game must show the best scores stored in the local database.
+6. NOT POSSIBLE: ~~The game must show the best scores stored in the local database.~~
+6. The game should have 3 difficulty levels with night and day modes.
 
 # Criteria B: Design
 
