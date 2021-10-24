@@ -25,7 +25,7 @@ Also, its codes can be easily written and executed much faster than other progra
 Python is an open source and has a lot of libraries to complement the code, so you can do practically anything with your code.
 
 ### Justify the structure of the proposed solution:
-My program has the typical game type and it is easy to understand. There are comments on each step, so someone that reads the code can understand what is happening easily. 
+My program has the typical game type and it is easy to understand. There are comments on each step, so someone that reads the code can understand what is happening easily. Also, there are functions that make the code simple and variables with names that are understandable.
 
 ## Success Criteria
 1. The game has to be entirely text-based.
@@ -51,7 +51,7 @@ This diagram is the most basic base of my game. You can see that there is the ba
 After this basic introducitons I am going to explain a bit more the algorithm. The user will input in the keyboard and will receive output in the monitor screen.
 
 ```
-#Example of how the labyrinth could look like.
+#Example of how the labyrinth would look like.
 
   0123456789
 0 ##########
@@ -89,9 +89,9 @@ shows the flow diagram for this function.
 ![userinterface](https://user-images.githubusercontent.com/89135778/138592407-778181c6-93e3-4379-aab8-a2acc6b80728.jpg)
 
 ## What is the personal relevance of the game? Why did you pick the theme?
-I love Greek and Roman myths and gods. They have relevance in our daily lifes. For example, they have had influence on Percy Jackson books, The Maze Runner series and many more. I think everyone should hear these stories because you can learn a lot of things about them. The idea of creating a game about a labyrinth first came and I wasn't even sure if it was possible to create it, but after some research I found how to do it. After that, I was thinking of the thematic and I thought that doing it about the Minotaur's myth could be very interesting. 
+I love Greek and Roman myths and gods. They have relevance in our daily lifes. For example, they have had influence on art, sculptures, Percy Jackson books, The Maze Runner series and many more. I think everyone should hear these stories because you can learn a lot of things about them. The idea of creating a game about a labyrinth first came and I wasn't even sure if it was possible to create it, but after some research I found how to do it. After that, I was thinking of the thematic and I thought that doing it about the Minotaur's myth could be very interesting. 
 
-## Future improvements:
+## Future improvements ideas:
 - Random initial positions for Theseus and Minotaur
 - The game could tell the user if the Minotaur is close
 - New labyrinths with different difficulty levels
