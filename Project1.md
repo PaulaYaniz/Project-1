@@ -16,11 +16,16 @@ Apart for this requirements, the owner is open to any type of game, topic or gen
 
 ## Proposed Solution
 
-Design statement:
-I will design and make a classical text-based game for a client who is the owner of the local game shop. The text-based game will be about the Minotaur's labyrinth and is constructed using the software Python. It will take 3 weeks to make and will be evaluated according to the criteria that is below.
+### Design statement:
+I will design and make a classical text-based game for a client who is the owner of the local game shop. The text-based game will be about how Theseus finds the exit to the Minotaur's labyrinth without getting eaten by the Minotaur or dying because of starvation and it is constructed using the software Python. It will take 3 weeks to make and will be evaluated according to the criteria that is below.
 
-Justify the tools/structure of your solution:
-Python is one of the most accessible programming languages because it is not complicatedit and has simplified syntax very similar to the English language, which is perfect for beginners. Also, its codes can be easily written and executed much faster than other programming languages. Python is an open source and has a lot of libraries to complement the code.
+### Justify the software of your solution:
+Python is one of the most accessible programming languages because it is not complicated and has simplified syntax very similar to the English language, which is perfect for beginners. According to many sources, 30% of programmers use Python as their main programming language, so there is a big Internet community for asking for help. 
+Also, its codes can be easily written and executed much faster than other programming languages. 
+Python is an open source and has a lot of libraries to complement the code, so you can do practically anything with your code.
+
+### Justify the structure of the proposed solution:
+My program has the typical game type and it is easy to understand. There are comments on each step, so someone that reads the code can understand what is happening easily. 
 
 ## Success Criteria
 1. The game has to be entirely text-based.
