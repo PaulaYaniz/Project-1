@@ -19,7 +19,7 @@ Apart for this requirements, the owner is open to any type of game, topic or gen
 ### Design statement:
 I will design and make a classical text-based game for a client who is the owner of the local game shop. The text-based game will be about how Theseus finds the exit to the Minotaur's labyrinth without getting eaten by the Minotaur or dying because of starvation and it is constructed using the software Python. It will take 3 weeks to make and will be evaluated according to the criteria that is below.
 
-### Justify the software of your solution:
+### Justify the software selected:
 Python is one of the most accessible programming languages because it is not complicated and has simplified syntax very similar to the English language, which is perfect for beginners. According to many sources, 30% of programmers use Python as their main programming language, so there is a big Internet community for asking for help. 
 Also, its codes can be easily written and executed much faster than other programming languages. 
 Python is an open source and has a lot of libraries to complement the code, so you can do practically anything with your code.
@@ -33,8 +33,8 @@ My program has the typical game type and it is easy to understand. There are com
 3. The game must record the player name and score.
 4. The game has to be played in less than 20 minutes each time.
 5. The user will only need its computer, a pen and a sheet of paper to play.
-6. NOT POSSIBLE: ~~The game must show the best scores stored in the local database.~~
-6. The game should have 3 difficulty levels with night and day modes.
+6. The game must show the best scores stored in the local database.
+7. The game should have 3 difficulty levels with night and day modes.
 
 # Criteria B: Design
 
@@ -51,7 +51,7 @@ This diagram is the most basic base of my game. You can see that there is the ba
 After this basic introducitons I am going to explain a bit more the algorithm. The user will input in the keyboard and will receive output in the monitor screen.
 
 ```
-#Example of how the labyrinth could look like. The user cannot see this.
+#Example of how the labyrinth could look like.
 
   0123456789
 0 ##########
@@ -84,6 +84,9 @@ To finish the game, the user needs to reach "E", the exit. If not, the time can 
 
 The database in the game has to be protected so that personal data is not exposed. To solve this requirement I am using the Caesar cypher. **Fig. 2**
 shows the flow diagram for this function.
+
+## User Interface Sketch
+![userinterface](https://user-images.githubusercontent.com/89135778/138592407-778181c6-93e3-4379-aab8-a2acc6b80728.jpg)
 
 ## What is the personal relevance of the game? Why did you pick the theme?
 I love Greek and Roman myths and gods. They have relevance in our daily lifes. For example, they have had influence on Percy Jackson books, The Maze Runner series and many more. I think everyone should hear these stories because you can learn a lot of things about them. The idea of creating a game about a labyrinth first came and I wasn't even sure if it was possible to create it, but after some research I found how to do it. After that, I was thinking of the thematic and I thought that doing it about the Minotaur's myth could be very interesting. 
