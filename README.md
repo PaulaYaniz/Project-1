@@ -5,4 +5,4 @@ This game consists of a recreation of the Greek myth of the Minotaur maze. It's 
 
 
 ### Go to Project1 to see the the complete description of the game
-### Go to Code to see the code of my game
+### Go to Code.md or Game.py to see the code of my game
