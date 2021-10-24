@@ -124,7 +124,7 @@ init = time.time()
 while(1):
 
   # TIME
-  # Here the timer is set up. If instead of 20 minutes you want to play maximum 5, change 20 to 5
+  # Here the timer is set up. In the max_time variable shown before you can choose the maximum seconds the user plays
   elapsed = int(time.time() - init)
   left = max_time - elapsed
   elapsed_min = int(elapsed/60)
