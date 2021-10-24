@@ -1,5 +1,4 @@
-### Python code for the base of my game.
-(Future improvemnts to be done)
+### Python code for my game
 
 ```
 # MINOTAUR'S LABYRINTH GAME
@@ -31,7 +30,6 @@ def print_lab():
         print(".", sep="", end="")
     print()
 
-
 # MAIN PROGRAM
 # Here I tell a brief resume of the greek myth and I link it to my game. Then I show an example of the labyrinth.
 print("WELCOME TO THE MINOTAUR'S LABYRINTH GAME!")
@@ -50,33 +48,76 @@ clear()
 print("Now, you can see an example on how the labyrinth would look like. You are @ and the Minotaur is M. Exit is E")
 print("The walls are # and the floor are .")
 print()
-lab = [[1,1,1,1,1,1,1,1,1,1],
-       [1,0,0,1,0,0,0,0,0,1],
-       [1,0,0,0,0,1,0,0,0,1],
-       [1,0,0,0,0,1,0,0,0,1],
-       [1,0,0,0,0,0,1,0,0,1],
-       [1,0,1,1,0,0,0,0,0,1],
-       [1,0,0,1,1,1,1,0,0,1],
-       [1,0,1,0,0,0,0,0,0,1],
-       [1,0,0,0,0,1,0,0,0,1],
-       [1,1,1,1,1,1,1,1,2,1]]
 
-minot_x = 8
-minot_y = 8
+# TWO TYPES OF LABYRINTHS
+n = randint(1, 2)
 
-theseus_x = 2
-theseus_y = 1
+if n == 1:
+    lab = [[1,1,1,1,1,1,1,1,1,1],
+           [1,0,0,1,0,0,0,0,0,1],
+           [1,0,0,0,0,1,0,1,1,1],
+           [1,0,1,0,1,1,0,0,0,1],
+           [1,0,0,0,0,0,1,0,1,1],
+           [1,0,1,1,0,0,0,0,0,1],
+           [1,0,0,1,1,1,1,0,0,1],
+           [1,0,1,0,0,0,0,0,0,1],
+           [1,0,0,0,0,1,0,0,0,1],
+           [1,1,1,1,1,1,1,1,2,1]]
+    minot_x = 8
+    minot_y = 8
+    theseus_x = 2
+    theseus_y = 1
+    print("This is labyrinth 1:")
+
+else:
+    lab = [[1,1,1,1,1,1,1,1,1,1],
+           [1,0,1,0,0,0,1,0,0,1],
+           [1,0,0,0,0,1,1,0,1,1],
+           [1,0,0,1,0,0,0,0,0,1],
+           [1,0,1,1,1,1,0,1,0,1],
+           [1,0,0,1,0,0,0,0,0,1],
+           [1,0,0,0,0,0,0,0,0,1],
+           [1,1,0,1,1,0,1,1,0,1],
+           [1,0,0,1,0,0,0,0,0,1],
+           [1,1,1,1,2,1,1,1,1,1]]
+    minot_x = 4
+    minot_y = 5
+    theseus_x = 8
+    theseus_y = 1
+    print("This is labyrinth 2:")
 
 print_lab()
 print()
+print()
+print("Your objective is to arrive to 'E', the exit, without being in the same point as the Minotaur.")
+print("To move, use your keyboard: 'N' for North, 'S' for South, 'W' for West and 'E' for East.")
+print()
+print("  (Press enter in the keyboard to continue)")
+input()
+clear()
 
-  # LABYRINTH VISUALIZATION
-  # Here the user choses if they want to play watching the labyrinth or not
+# LABYRINTH VISUALIZATION
+# Here the user chooses if they want to play watching the labyrinth or not
+print("GAME MODE:")
 print("If you play during the day, you will see the labyrinth. If you play during the night, you won't.")
 print("Hint: if it is the first time you play, day mode is easier.")
+print()
 mode = input("Please write 'NIGHT' for playing in the night and 'DAY' for playing in the day: ")
+mode = mode.lower()
 clear()
+if (mode != "day") and (mode != "night"):
+    print("I don't understand")
+    mode = "day"
+
 print('You are playing', mode, 'mode.')
+
+if mode == "day":
+    max_time = 120
+    print("You have 2 minutes")
+else:
+    max_time = 360
+    print("You have 6 minutes")
+
 
 print("Now, you are like Theseus and you need to move in the labyrinth. Use your keyboard to move.")
 
@@ -88,29 +129,20 @@ while(1):
   # TIME
   # Here the timer is set up. If instead of 20 minutes you want to play maximum 5, change 20 to 5
   elapsed = int(time.time() - init)
-  left = 20*60 - elapsed
+  left = max_time - elapsed
   elapsed_min = int(elapsed/60)
   elapsed_sec = int(elapsed%60)
   left_min = int(left/60)
   left_sec = int(left%60)
 
-  # LABYRINTH VISUALIZATION
-  # Function for seeing the labyrinth depending on night or day mode
-  def see_lab():
-    if mode == "DAY" or mode == "day" or mode == "Day":
-        print_lab()
-        print()
-    elif mode == "NIGHT" or mode == "night" or mode == "Night":
-        ()
-    else:
-        print("Please, write 'NIGHT' or 'DAY'")
-        see_lab()
 
   # THESEUS MOVEMENT
-  if mode == "NIGHT" or mode == "night" or mode == "Night":
+  if mode == "night":
     print("If you need a hint, write HINT")
   else:
-      see_lab()
+    print_lab()
+    print()
+
   dir = input("Enter the direction NSWE:")
   clear()
   if dir == "N" or dir == "n":
@@ -163,8 +195,8 @@ while(1):
   # The game finish and the user wins or loses
   if lab[theseus_y][theseus_x] == 2:
     print("Congratulations "+name+"! You did it!")
-    score = ((2400 - mov - elapsed)/2400)*100
-    print("Your score is", int(score))
+    score = int(((max_time*2 - mov - elapsed)/(max_time*2))*100)
+    print("Your score is", score)
     print("You have arrived to the exit in", elapsed_min, "minutes and", elapsed_sec, "seconds and doing", mov, "movements.")
     if score > 80:
       print("Congratulations "+name+"! You are awesome!")
@@ -172,6 +204,18 @@ while(1):
       print("You did good", name, "but try harder the next time. You almost die!")
     else:
       print("Good job", name+"! If you continue playing you will be better!")
+
+    score_file = "score.txt"
+    s = open(score_file, "a")
+    line = name + " - " + str(score) + "\n"
+    s.write(line)
+    s.close()
+    s = open(score_file, "r")
+    print()
+    print("LAST SCORES: ")
+    print(s.read())
+    s.close()
+
     break
 
   if theseus_y == minot_y and theseus_x == minot_x:
@@ -179,13 +223,14 @@ while(1):
     print("Oh no, the minotaur has eaten", name+"!")
     print("GAME OVER")
     break
-    
-  # Future improvement: 5 minutes instead of 20 and change score calculation
-  if elapsed > 1200:
+
+  if elapsed > max_time:
     print()
     print("Time over.", name, "is tired and dies.")
     print("GAME OVER")
     break
 
+# END GAME
+input()
+
 ```
-  
